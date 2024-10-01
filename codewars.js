@@ -54,11 +54,22 @@ function sum (numbers) {
   return result;
   
 };
-console.log(sum([1, 5.2, 4, 0, -1]));*/
+console.log(sum([1, 5.2, 4, 0, -1]));
 
 const stringToNumber = function(str){
   let num = Number(str);
   return num;
 }
 
-console.log(stringToNumber);
+function DNAtoRNA(dna) {
+  let a = dna.map(e => e.replace(/T/g, 'U'));
+  return ;
+}
+
+
+console.log(DNAtoRNA['TTTT',
+'GCAT',
+'GATTCCACCGACTTCCCAAGTACCGGAAGCGCGACCAACTCGCACAGC']);*/
+
+
+
