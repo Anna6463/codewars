@@ -173,3 +173,26 @@ function findNextSquare(sq) {
   var root = Math.sqrt(sq);
   return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
 }
+
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000;
+}
+
+function removeChar(str){
+  //You got this!
+   let newStr = ""
+   for(i = 0 ; i < str.length ; i++){
+     if(i == 0){
+       newStr += ""
+     }else if(i > 0 && i < (str.length-1)){
+       newStr += str[i]
+     }else if (i == str.length){
+       newStr += ""
+     }
+   }
+   return newStr
+ };
