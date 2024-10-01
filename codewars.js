@@ -157,4 +157,19 @@ function squareSum(numbers){
   return sum
 }
 
-console.log(squareSum[1, 2, 2]);*/
+console.log(squareSum[1, 2, 2]);
+
+function digitize(n) {
+  var initialArray = (""+n).split('');
+  var reversedArray = [];
+  for (var i = initialArray.length - 1; i >= 0; i--) {
+    reversedArray[i] = parseInt(initialArray.shift(),10);
+  }
+  return reversedArray;
+}
+console.log(digitize(325));*/
+
+function findNextSquare(sq) {
+  var root = Math.sqrt(sq);
+  return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
+}
