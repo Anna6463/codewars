@@ -196,3 +196,43 @@ function removeChar(str){
    }
    return newStr
  };
+
+ function countPositivesSumNegatives(input) {
+  if (input === null || input.length < 1) {
+      return [];
+  }
+  var array = [0, 0];
+
+  for(var i = 0; i < input.length; i++) {
+      if(input[i] <= 0) {
+          array[1] += input[i];
+    } else {
+          array[0] += 1;
+    }
+  }
+  return array;
+}
+
+function findShort(s) {
+  let res = s.split(' ');
+  let a = Infinity;
+  
+  for (let i = 0; i < res.length; i++) {
+    a = Math.min(res[i].length, a);
+  }
+  return a;
+}
+
+function oddOrEven(array) {
+  return array.reduce(function(sum, item) {
+    return sum + item
+  }, 0) % 2 == 0 ? 'even' : 'odd';
+}
+function DNAStrand(dna) {
+  var letters = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'};
+  var arr = [];
+  for (var i=0; i < dna.length; i++) {
+      arr[i] = letters[dna[i]];
+  }
+  return arr.join('');
+}
