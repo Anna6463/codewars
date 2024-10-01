@@ -130,4 +130,31 @@ function hero(bullets, dragons) {
 
 }
 
-console.log(hero(29, 15));*/
+console.log(hero(29, 15));
+
+const reverseSeq = n => {
+  let foo = [];
+  for( let i = n; i > 0; --i){
+    
+     foo.push(i);
+  }
+  return foo;
+};
+
+console.log(reverseSeq(5));
+
+function otherAngle(a, b) {
+  
+  return 180 - a - b;
+}
+console.log(otherAngle(50, 50));*/
+
+function squareSum(numbers){
+  let sum = 0;
+  for (let i = 0; i <= numbers.length - 1; i++){
+    return sum = sum + numbers[i]**2;
+  }
+
+}
+
+console.log(squareSum[1, 2, 2]);
