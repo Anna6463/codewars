@@ -69,7 +69,52 @@ function DNAtoRNA(dna) {
 
 console.log(DNAtoRNA['TTTT',
 'GCAT',
-'GATTCCACCGACTTCCCAAGTACCGGAAGCGCGACCAACTCGCACAGC']);*/
+'GATTCCACCGACTTCCCAAGTACCGGAAGCGCGACCAACTCGCACAGC']);
 
 
 
+function positiveSum(arr) {
+  let sum = 0;
+  for (i = 0; i < arr.length; ++i){
+    if (arr[i] > 0){
+      sum += arr[i];
+      
+    }
+    
+  }
+  return  sum;
+}
+console.log(positiveSum([1,-4,7,12]));
+
+
+function sumArray(array) {
+        if (array == null)
+      {
+          return 0;
+      }
+      else if (array.length < 2)
+      {
+          return 0;
+      }
+      else
+      {
+  
+          array = array.sort(function(a,b) {return a - b;});
+  //         variable to hold the sum of the sorted array
+          var total = 0;
+  
+          for (var i = 1; i < array.length - 1; i++) {
+              total += array[i];
+          }
+          return total;
+      }
+  } */
+
+  function smash (words) {
+    if (words.length === 0){
+      return "";
+    } else {
+      return words.join(" ").trim();
+    }
+  };
+  console.log(smash['hello', 'world', 'this', 'is', 'great']);
