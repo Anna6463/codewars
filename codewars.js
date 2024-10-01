@@ -108,7 +108,7 @@ function sumArray(array) {
           }
           return total;
       }
-  } */
+  } 
 
   function smash (words) {
     if (words.length === 0){
@@ -118,3 +118,16 @@ function sumArray(array) {
     }
   };
   console.log(smash['hello', 'world', 'this', 'is', 'great']);
+
+function hero(bullets, dragons) {
+  if (bullets < dragons) {
+    return false;
+  } else if (bullets >= dragons * 2) {
+    return true;
+  }else{
+    return false;
+  }
+
+}
+
+console.log(hero(29, 15));*/
