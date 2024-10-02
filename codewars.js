@@ -167,7 +167,7 @@ function digitize(n) {
   }
   return reversedArray;
 }
-console.log(digitize(325));*/
+console.log(digitize(325));
 
 function findNextSquare(sq) {
   var root = Math.sqrt(sq);
@@ -234,5 +234,27 @@ function DNAStrand(dna) {
   for (var i=0; i < dna.length; i++) {
       arr[i] = letters[dna[i]];
   }
-  return arr.join('');
-}
+  return arr.join('');}
+
+  function minMax(arr){
+    let arrNew = [];
+   
+    let min = Math.min(...arr);
+    console.log(min);
+    
+      arrNew.push(min);
+     let max = Math.max(...arr);
+     console.log(max);
+      arrNew.push(max);
+  
+    
+    return arrNew // fix me!
+  }
+  console.log(minMax[1,2,3,4,5]);*/
+
+  function removeExclamationMarks(s) {
+    /*const regExp = //!+$/g/;*/
+
+    return s.replace(/!/g, '');
+  }
+  console.log(removeExclamationMarks('mIRtMGohzV!iFxholAKyH SZmOljJknP!ohfoxpYDFB'));
