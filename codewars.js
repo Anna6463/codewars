@@ -250,11 +250,58 @@ function DNAStrand(dna) {
     
     return arrNew // fix me!
   }
-  console.log(minMax[1,2,3,4,5]);*/
+  console.log(minMax[1,2,3,4,5]);
 
   function removeExclamationMarks(s) {
-    /*const regExp = //!+$/g/;*/
+    /*const regExp = //!+$/g/;
 
+
+    
     return s.replace(/!/g, '');
   }
   console.log(removeExclamationMarks('mIRtMGohzV!iFxholAKyH SZmOljJknP!ohfoxpYDFB'));
+
+  function evenOrOdd(number) {
+    if (number % 2 == 0){
+      return "Even"
+    } else{
+      return "Odd"
+    }
+    
+  }
+  console.log(evenOrOdd(54));*/
+
+  function alphabetPosition(text) {
+    return text.charCodeAt();
+  }
+
+  console.log(alphabetPosition('aaa'));
+
+  function alphabeticalPosition(text) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    return text
+        .toLowerCase() // Convert the text to lowercase to handle both cases
+        .split('') // Split the string into an array of characters
+        .map(char => {
+            const index = alphabet.indexOf(char); // Get the index of the character in the alphabet
+            return index !== -1 ? index + 1 : null; // If it's a letter, return its position (+1 because index is zero-based)
+        })
+        .filter(pos => pos !== null) // Remove any null values (non-letters)
+        .join(' '); // Join the resulting array into a string with spaces
+}
+
+function towerBuilder(nFloors) {
+  var finalArray = [];
+  var numSpaces = 0;
+  // Start from the reverse.
+  for (i = nFloors; i > 0; i--) {
+    // At the end, the number of spaces are 0.
+    // Have one and less for the half of the stars.
+    // Add another set of spaces.
+    finalArray.push(" ".repeat(numSpaces) + "*".repeat(i) + "*".repeat(i-1)  + " ".repeat(numSpaces));
+    // Increment the space, while going to top.
+    numSpaces++;
+  }
+  // Reverse the array.
+  return finalArray.reverse();
+}
