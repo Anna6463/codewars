@@ -269,7 +269,7 @@ function DNAStrand(dna) {
     }
     
   }
-  console.log(evenOrOdd(54));*/
+  console.log(evenOrOdd(54));
 
   function alphabetPosition(text) {
     return text.charCodeAt();
@@ -323,4 +323,23 @@ function likes(names) {
 
 function rowSumOddNumbers(n) {
   return Math.pow(n, 3);
+}*/
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  if(distanceToPump / mpg <= fuelLeft){
+    return true;
+  }else {
+    return false;
+  }
+};
+
+console.log(zeroFuel(50, 25, 2));
+console.log(zeroFuel(50, 25, 1));
+
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === 'r') {
+   return name + ' plays banjo';
+ } else {
+   return name + ' does not play banjo';
+ }
 }
