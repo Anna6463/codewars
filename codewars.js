@@ -320,3 +320,7 @@ function likes(names) {
     return `${names[0]}, ${names[1]} and ${names.length-2} others like this`
   }
 }
+
+function rowSumOddNumbers(n) {
+  return Math.pow(n, 3);
+}
