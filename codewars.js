@@ -356,3 +356,20 @@ function getCount(str) {
   } 
     return i;
   }
+
+  return x.reduce(function(product, n){
+    return product * n;
+}, 1)
+function rentalCarCost(d) {
+  const dailyRate = 40; // Cost per day
+      let totalCost = dailyRate * d; // Calculate total cost without discounts
+  
+      // Apply discounts based on rental duration
+      if (d >= 7) {
+          totalCost -= 50; // $50 discount for 7 or more days
+      } else if (d >= 3) {
+          totalCost -= 20; // $20 discount for 3 or more days
+      }
+  
+      return totalCost; // Return the final total cost
+  }
