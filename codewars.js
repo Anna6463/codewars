@@ -343,3 +343,16 @@ function areYouPlayingBanjo(name) {
    return name + ' does not play banjo';
  }
 }
+
+function getCount(str) {
+  var m = str.match(/[aeiou]/gi);
+   return m === null ? 0 : m.length;
+ }
+
+
+ function nbYear(p0, percent, aug, p) {
+  for (var i = 0; p0 < p; i++){
+    p0 += p0 * percent / 100 + aug | 0
+  } 
+    return i;
+  }
