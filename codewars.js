@@ -373,3 +373,17 @@ function rentalCarCost(d) {
   
       return totalCost; // Return the final total cost
   }
+
+
+  function setAlarm(employed, vacation){
+    return employed && !vacation; // Return true if employed and not on vacation
+    }
+
+    function doubleChar(str) {
+      return [...str].map(s => s.repeat(2)).join('')
+    }
+
+    function repeatStr (n, s) {
+  
+      return s.repeat(n);
+     }
