@@ -387,3 +387,21 @@ function rentalCarCost(d) {
   
       return s.repeat(n);
      }
+
+     function check(a, x) {
+      return a.includes(x);
+     }
+
+
+     function reverseWords(str) {
+      // Split the string by spaces to get individual words while retaining spaces
+          const words = str.split(/(\s+)/); // Regex keeps spaces in the array
+          
+          // Reverse each word, keeping spaces intact
+          const reversedWords = words.map(word => {
+              return word.trim() ? word.split('').reverse().join('') : word;
+          });
+          
+          // Join the reversed words/parts back into a single string
+          return reversedWords.join('');
+      }
